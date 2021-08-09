@@ -2,11 +2,6 @@ const { gql } = require('apollo-server');
 const database = require('../database');
 
 const teams = gql`
-    type Query {
-        teams: [Team]
-        team(id: Int): Team
-    }
-
     type Team {
     id: Int
     manager: String
